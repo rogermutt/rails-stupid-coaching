@@ -1,0 +1,8 @@
+<h1 class="title">Ask your coach</h1>
+
+<form action="/answer" method="get">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="question" placeholder="What would you like to ask?">
+  <input type="submit">
+</form>
+

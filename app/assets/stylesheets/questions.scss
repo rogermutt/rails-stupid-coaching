@@ -1,0 +1,46 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin size_pad_marg_color($size, $pad, $mar, $hex) {
+  font-size: $size;
+  padding: $pad;
+  margin: $mar;
+  background-color: $hex;
+}
+
+body {
+  background-color: rgba(250,250,250,0.6);
+}
+
+a {
+  font-size: 24px;
+  text-decoration: none;
+  margin: 24px;
+}
+
+h1 {
+ font-size: 40px;
+ font-family: sans-serif;
+ margin: 24px;
+}
+
+.question-section {
+   @include size_pad_marg_color(26px, 20px, 20px, #C5DAC1);
+}
+
+.answer-section {
+  @include size_pad_marg_color(26px, 20px, 20px, #DEF2C8);
+  animation-fill-mode: forwards;
+  -webkit-animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
